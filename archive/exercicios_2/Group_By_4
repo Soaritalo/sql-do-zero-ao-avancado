@@ -1,0 +1,5 @@
+--Quantos produtos são de rpg?
+select COUNT(*) as RPG
+from produtos
+where DescCategoriaProduto like '%rpg%'
+

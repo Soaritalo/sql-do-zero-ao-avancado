@@ -1,1 +1,8 @@
---Qual dia da semana quem mais pedidos em 2025?
+    --Qual dia da semana quem mais pedidos em 2025?
+SELECT count(DISTINCT IdTransacao) AS Total_Pedidos,
+strftime('%w', substr(DtCriacao,1,10)) as diasemana
+
+FROM transacoes 
+where substr(DtCriacao,1,4) = '2025'
+group BY diasemana
+order by Total_Pedidos DESC

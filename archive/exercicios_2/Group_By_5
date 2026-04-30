@@ -1,1 +1,9 @@
 --Qual o valor médio de pontos positivos por dia?
+SELECT avg(qtdePontos) as media_pontos 
+
+
+FROM clientes
+
+
+
+GROUP BY DtCriacao as 'DATE'
