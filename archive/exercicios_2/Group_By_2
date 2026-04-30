@@ -1,0 +1,8 @@
+--qual cliente juntou mais pontos positivos em 2025-05?
+
+select idCliente,SUM(QtdePontos) as Contagem_de_pontos
+
+from clientes 
+where DtCriacao LIKE '2025-05%'
+GROUP BY idCliente
+order by Contagem_de_pontos desc

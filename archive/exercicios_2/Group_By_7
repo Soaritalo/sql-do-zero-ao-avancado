@@ -1,0 +1,4 @@
+--Qual o produto mais transacionado?
+SELECT *
+FROM transacao_produto
+GROUP BY IdProduto

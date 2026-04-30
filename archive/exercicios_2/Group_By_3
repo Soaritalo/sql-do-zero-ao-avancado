@@ -1,0 +1,7 @@
+--Qual cliente fez mais transações no ano de 2024?
+select COUNT(IdTransacao) as transacoes,
+idCliente
+from transacoes
+where DtCriacao like '%2024%'
+GROUP BY idCliente
+ORDER BY transacoes DESC

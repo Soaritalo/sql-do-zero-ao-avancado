@@ -1,0 +1,6 @@
+-- quantos clientes tem email cadastrado?
+
+
+select idCliente , sum(flEmail)
+from clientes
+where flEmail >=1
