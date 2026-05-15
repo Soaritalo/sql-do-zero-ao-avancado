@@ -1,6 +1,4 @@
 *.sql linguist-language=SQL
-
 *.ipynb linguist-detectable=false
-*.html linguist-detectable=false
-*.css linguist-detectable=false
-*.js linguist-detectable=false
+*.csv linguist-detectable=false
+*.zip linguist-detectable=false
