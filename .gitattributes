@@ -1,4 +1,5 @@
 *.sql linguist-language=SQL
-*.ipynb linguist-detectable=false
+
 *.csv linguist-detectable=false
-*.zip linguist-detectable=false
+*.db linguist-detectable=false
+*.ipynb linguist-detectable=false
